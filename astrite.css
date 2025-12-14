@@ -12,6 +12,32 @@ h1, h2, h3, p {
     text-justify: inter-word;
 }
 
+.border-box {
+  width: 1200px;
+  height: 20px;
+  border: 2px solid #3065B0;
+  margin: 2px;
+  align-items: center;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.tip {
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  animation: moveText 7s linear infinite;
+}
+
+@keyframes moveText {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
 .overview {
   display: flex;
   align-items: flex-start; /* aligns image with paragraph top */
